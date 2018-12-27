@@ -124,12 +124,13 @@ span.paper {
         min-width: 90px;
         max-width: 90px; 
       }   
+
       ul.dailytech {
         border-radius:8px;
         border:outset 2px silver;
       }
-      ul.dailytech li * {
-        color:darkblue;
+      ul.dailytech li {
+        color:lightsteelblue;
         } 
 .charts { 
   min-height:80px; 
@@ -197,25 +198,18 @@ left:-10px;
   <!--<link href="dist/css/vendor/kendo.silver.min.css" rel="stylesheet"  />
     <link href="dist/css/vendor/kendo.silver.mobile.min.css" rel="stylesheet"  />
     <link href="dist/css/vendor/kendo.dataviz.default.min.css" rel="stylesheet"  />
- <link rel="stylesheet" href="app/css/bootstrap.cerulean.min.css" />
- -->
- <--
- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.20/angular-ui-router.min.js"></script>  
+ <link rel="stylesheet" href="app/css/bootstrap.cerulean.min.css" /> 
+   
  -->   
     <link rel="stylesheet" href="dist/css/app.css" />
   <link rel="stylesheet" href="dist/css/font.css"> 
-  
-<script src="dist/js/vendor/kendo.all.min.js"></script>
-<script src="dist/js/vendor/angular-kendo.js"></script>
   
 </head>
 <body ng-app="app" class="page-home"> 
   <base href="/" />  
   <div>
-  <nav id="nav" class="navbar navbar-default">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
+  <nav  class="navbar navbar-default">
+    <div class="container-fluid"> 
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -226,7 +220,6 @@ left:-10px;
             <a class="navbar-brand navtmm" ui-sref="home"></a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling   -->
         <div class="collapse navbar-collapse navtech-wrapper" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right pull-right dailytech">
           <li>
@@ -265,13 +258,9 @@ left:-10px;
          <ul class="nav navbar-nav navtech">
                 <li><a ui-sref="about" ui-sref-active="active">About</a></li>
                 <li><a ui-sref="profile" ui-sref-active="active">Profile</a></li>
-                <li><a ui-sref="chlor" ui-sref-active="active">Maps</a></li> 
-             
-            </ul>
-            
-        </ul>
-       
-
+                <li><a ui-sref="chlor" ui-sref-active="active">Maps</a></li>   
+            </ul> 
+        </ul> 
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid --> 
   </nav> 
@@ -339,7 +328,7 @@ left:-10px;
 --> 
 <script src="dist/js/vendor/toastr.min.js"></script>
 <script src="dist/js/vendor/angular.min.js"></script>
-<script src="dist/js/vendor/ui-router.min.js"></script>
+<script src="dist/js/vendor/angular-ui.min.js"></script>
 <script src="dist/js/vendor/kendo.all.min.js"></script>
 <script src="dist/js/vendor/angular-kendo.js"></script>
 

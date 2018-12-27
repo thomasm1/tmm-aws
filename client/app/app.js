@@ -168,7 +168,7 @@
               });  
 
     }]);
-
+/*
     app.run(['$rootScope', '$log', function($rootScope, $log) {
 
         $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
@@ -202,5 +202,7 @@
         });
 
     }]);
+        */
+
 
 }());
